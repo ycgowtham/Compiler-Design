@@ -1,0 +1,37 @@
+Contributions: 
+ 
+- Equal contribution by everyone for
+    - Design Decisions
+    - Grammar
+    - Semantic Analyzer
+    - Ambiguity resolving for Infinity
+
+- Pramod
+    -Ebnf format of the Grammar for Infinity Language.
+
+- Satish
+    - Convert the ebnf grammmar into the ANtlr accepted format (g4).
+
+- Dixith
+    - Syntax diagrams for the grammar using g4 for easy understanding of g4
+
+- Pramod
+    - Understand and carefully integrate the generated ANtlr files which are specific to Infinity Language
+    - Implement Main Infinity Runner file which accepts Infinity code and performs lexical analysis
+    - Error handling for incorrect Inputs or syntactically incorrect Infinity code
+    - Generation of parse tree for the provide Infinity file
+
+- Satish
+    - Implement the intermediate code generation part using ANTlr generated files
+    - Change Listners for each of the entry and exit of non terminals
+    - Semantic error handling
+    - Generate and write the output of syntactically and semantically correct programs to <filename>.inf.byte
+
+Gowtham & Dixith -
+    - Understand the cdec calling conventions for building Runtime for Infinity
+    - Runtime environment using Java with great importance to OOPS
+    - Build inhouse data structures (stack, Symbol table) to support the language
+    - Build Runtime to support basic arithemtic, logical, conditional flows
+    - Providing contracts between parser and runtime
+    - Basic error handling for incorrect byte code supplied
+    - Does the runtime properly execute producing a correct result for each sample program.
